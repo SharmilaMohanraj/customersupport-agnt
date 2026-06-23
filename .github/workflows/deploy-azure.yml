@@ -24,7 +24,7 @@ on:
       agent_slug:
         description: "Agent slug (used as Container App name)"
         required: false
-        default: "customer-support-agent-23561780"
+        default: "customer-support-agent-235"
 
 permissions:
   contents: read
