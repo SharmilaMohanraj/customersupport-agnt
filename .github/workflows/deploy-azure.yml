@@ -31,7 +31,7 @@ permissions:
   id-token: write  # Required for OIDC login
 
 env:
-  APP_NAME: agent-${{ inputs.agent_slug || 'customer-support-agent-23561780' }}
+  APP_NAME: agent-${{ inputs.agent_slug || 'customer-support-agent-235' }}
 
 jobs:
   deploy:
