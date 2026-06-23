@@ -60,6 +60,8 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           acrName: ${{ secrets.AZURE_ACR_NAME }}
+          acrUsername: ${{ secrets.ACR_USERNAME }}
+          acrPassword: ${{ secrets.ACR_PASSWORD }}
           containerAppName: ${{ env.APP_NAME }}
           resourceGroup: ${{ secrets.AZURE_RESOURCE_GROUP }}
           containerAppEnvironment: ${{ secrets.AZURE_CONTAINER_APP_ENV }}
