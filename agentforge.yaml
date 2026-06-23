@@ -1,0 +1,23 @@
+# AgentForge manifest — do not edit manually
+apiVersion: agentforge/v1
+kind: AgentManifest
+
+metadata:
+  agentId: "e7a93434-43f1-4d65-8ed6-0724009c257f"
+  agentVersionId: "e8ae3688-00b6-4f77-8ebe-631339b9e3bf"
+  slug: "customer-support-agent-23561780"
+  name: "Customer Support Agent"
+
+spec:
+  runtime:
+    llmModel: "gpt-4o-mini"
+    environment: "kubernetes"
+  resources:
+    cpu: "0.5"
+    memory: "1Gi"
+    replicas: 2
+  healthCheck:
+    path: "/health"
+
+cost:
+  estimatedMonthlyUsd: 45.08

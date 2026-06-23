@@ -1,0 +1,14 @@
+[
+  {
+    "type": "prompt_injection",
+    "config": {},
+    "enabled": true
+  },
+  {
+    "type": "pii",
+    "config": {
+      "action": "redact"
+    },
+    "enabled": true
+  }
+]
