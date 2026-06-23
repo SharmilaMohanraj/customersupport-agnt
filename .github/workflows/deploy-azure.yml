@@ -24,14 +24,14 @@ on:
       agent_slug:
         description: "Agent slug (used as Container App name)"
         required: false
-        default: "customer-support-agent-235"
+        default: "customer-support-agent-23561780"
 
 permissions:
   contents: read
   id-token: write  # Required for OIDC login
 
 env:
-  APP_NAME: agent-${{ inputs.agent_slug || 'customer-support-agent-235' }}
+  APP_NAME: agent-${{ inputs.agent_slug || 'customer-support-agent-23561780' }}
 
 jobs:
   deploy:
@@ -52,7 +52,7 @@ jobs:
 
       - name: Deploy to Azure Container Apps
         id: deploy
-        uses: azure/container-apps-deploy-action@v1
+        uses: azure/container-apps-deploy@v1
         with:
           appSourcePath: ${{ github.workspace }}
           acrName: ${{ secrets.AZURE_ACR_NAME }}
